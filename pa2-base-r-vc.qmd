@@ -74,25 +74,25 @@ punctuation <- c(".", ",", "!", "?", "'", '"', "(", ")", " ", "-", ";", ":")
 2.  Make **one** long **vector** containing all the symbols.
 
 ```{r}
-my_symbols <- (lower_case, upper_case, punctuation)
+my_symbols <- c(lower_case, upper_case, punctuation)
 ```
 
 3.  Turn the `my_symbols` vector into a data frame, with one column named "symbol".
 
 ```{r}
-my_symbols <- dataframe(symbol = my_symbols)
+my_symbols <- data.frame(symbol = my_symbols)
 ```
 
 4.  Find the total number of symbols we have in our data frame.
 
 ```{r}
-len <- length(my_Symbols)
+len <- length(my_symbols$symbol)
 ```
 
 5.  Create a new variable in your dataframe that assigns a number to each symbol.
 
 ```{r}
-my_symbols%Num <- 1:len
+my_symbols$num <- 1:len
 ```
 
 <!-- Developer Stage your Changes, Commit, and Push to the Git Repository-->
